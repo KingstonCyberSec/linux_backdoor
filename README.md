@@ -22,7 +22,7 @@ Images :
 
 Note : 
 
-Once the backdoor is injected, it will automatically delete the linux_backdoor directory from the victim's computer.
+Once the backdoor is injected, it will automatically delete the linux_backdoor directory from the victim's PC.
   
 
 
