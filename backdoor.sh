@@ -20,7 +20,7 @@ then
 fi
 
 
-echo -e "${GREEN}          oOo 
+echo -e "${GREEN}        oOo 
                              oO
                                o
         |^^^^^^^^^^^^^^^^^^^^^^|____
