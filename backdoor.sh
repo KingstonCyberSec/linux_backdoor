@@ -7,16 +7,6 @@ ENDCOLOR="\e[0m"
 
 $_REQUEST="$_REQUEST"
 
-if [ -z $1 ]
-then
-	echo -e "${RED}[*] Syntax: <ATTACKER IP> <PORT> ${ENDCOLOR}"
-    exit 1
-fi
-
-if [ -z $2 ]
-then
-    echo -e "${RED}[*] Syntax: <ATTACKER IP> <PORT> ${ENDCOLOR}"
-    exit 1
 fi
 
 
